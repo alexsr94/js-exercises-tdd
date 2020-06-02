@@ -1,3 +1,5 @@
-function findNeedle(words) {}
+function findNeedle(words,palabra) {
+    return words.indexOf(palabra)
+}
 
 module.exports = findNeedle;

@@ -3,17 +3,22 @@ function removeVowels(word) {
 
   var result = [];
 
-  characters.forEach(function(character) {
+  characters.forEach(function (character) {
     if (
       character === "a" ||
-      character === "o" ||
-      character === "i" ||
       character === "e" ||
-      character === "u"
+      character === "i" ||
+      character === "o" ||
+      character === "u" ||
+      character === "A" ||
+      character === "E" ||
+      character === "I" ||
+      character === "O" ||
+      character === "U"
     ) {
-      result.push(character);
+      result.push("");
     } else {
-      result.push("_");
+      result.push(character);
     }
   });
 
